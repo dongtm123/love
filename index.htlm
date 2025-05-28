@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Lời nhắn yêu thương 💌</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card">
+    <img src="thumbnail.png" alt="Lời nhắn" class="background-img">
+    <div class="content">
+      <h1>💖 Lời Nhắn Gửi Em 💖</h1>
+      <p>Em là điều tuyệt vời nhất từng đến trong cuộc đời anh. Hãy quét mã QR để nhận món quà bất ngờ nhé!</p>
+    </div>
+  </div>
+
+  <script>
+    const card = document.querySelector('.card');
+    document.addEventListener('mousemove', (e) => {
+      const x = (window.innerWidth / 2 - e.clientX) / 20;
+      const y = (window.innerHeight / 2 - e.clientY) / 20;
+      card.style.transform = rotateY(${x}deg) rotateX(${y}deg);
+    });
+  </script>
+</body>
+</html>
